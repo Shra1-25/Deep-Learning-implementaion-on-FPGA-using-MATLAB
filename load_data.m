@@ -1,0 +1,16 @@
+disp('Initialising data loading');
+conv2d_1_kernel=h5read('model_digit.h5', '/conv2d_1/conv2d_1/kernel:0');
+conv2d_1_bias=h5read('model_digit.h5', '/conv2d_1/conv2d_1/bias:0');
+disp('conv2d_1 done');
+conv2d_2_kernel=h5read('model_digit.h5', '/conv2d_2/conv2d_2/kernel:0');
+conv2d_2_bias=h5read('model_digit.h5', '/conv2d_2/conv2d_2/bias:0');
+disp('conv2d_2 done');
+dense_1_kernel=h5read('model_digit.h5', '/dense_1/dense_1/kernel:0');
+dense_1_bias=h5read('model_digit.h5', '/dense_1/dense_1/bias:0');
+disp('dense_1 done');
+dense_2_kernel=h5read('model_digit.h5', '/dense_2/dense_2/kernel:0');
+dense_2_bias=h5read('model_digit.h5', '/dense_2/dense_2/bias:0');
+disp('dense_2 done');
+X_test=readNPY('input_data1.npy');
+y_test=readNPY('output_data.npy');
+disp('data loaded successfully');
