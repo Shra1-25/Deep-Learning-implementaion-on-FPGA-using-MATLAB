@@ -6,4 +6,3 @@ Run the following commands on command window before running the main.m script:
 >> addpath('npy-matlab');  
 >> savepath;   
 >>output=main(X_test(1,:,:),conv2d_1_kernel,conv2d_1_bias,conv2d_2_kernel,conv2d_2_bias,dense_1_kernel,dense_1_bias,dense_2_kernel,dense_2_bias);  
-I have provided random 10 samples. You may change X(1,:,:) to X(1:10,:,:) to get outputs of all the 10 samples. Or you may also load more samples by creating them (preprocessing MNIST data) using Training_MNIST_digit.ipynb notebook.
